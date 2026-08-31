@@ -1,0 +1,62 @@
+# ==========================================
+# SENTINEL-AI Git Ignore Configurations
+# ==========================================
+
+# ------------------------------------------
+# Environment & Secrets (CRITICAL)
+# ------------------------------------------
+.env
+.env.*
+!.env.example
+*.env
+backend/.env
+frontend/.env
+*.pem
+*.key
+
+# ------------------------------------------
+# Python / Virtual Environment
+# ------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+*.egg-info/
+.pytest_cache/
+.coverage
+
+# ------------------------------------------
+# Node.js / Frontend Build & Dependencies
+# ------------------------------------------
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+build/
+coverage/
+.vite/
+frontend/.vite/
+*.tsbuildinfo
+frontend/tsconfig.tsbuildinfo
+
+# ------------------------------------------
+# Logs & Temporary Files
+# ------------------------------------------
+*.log
+logs/
+temp/
+tmp/
+*.tmp
+
+# ------------------------------------------
+# IDE & System Files
+# ------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
